@@ -124,3 +124,21 @@ footer a {
     color: #999;
     text-decoration: none;
 }
+
+
+/* Responsive Stuff */
+@media only screen and (max-width: 600px) {
+    html, body {
+	padding: 0px 20px;
+    }
+    
+    header,
+    main,
+    footer {
+	width: 100%;
+    }
+
+    header {
+	padding: 0;
+    }
+}
