@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}About - {{ SITENAME }}{% endblock %}
+{% block content %}
+
+<h1 class="bottom-big centered">About</h1>
+<p>Thoughts, notes, and incoherent words by <a href="https://imwally.net">Wally Jones</a>.</p>
+<p>
+  {% for article in articles %}
+  {% if loop.first %}
+  <a href="/{{ article.url }}">{{ article.title }}</a> was the lastest post I wrote.</p>
+{% endif %}
+{% endfor %}
+<p>The &Nopf; at the top of the page stands for Nil. If you're curious about the name, well, there's nothing particularly interesting behind it. Naming things is just <a href="https://twitter.com/codinghorror/status/506010907021828096">difficult</a>.</p>
+
+{% endblock %}
+

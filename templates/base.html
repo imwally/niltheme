@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+  <head>
+    <meta charset="utf-8" />
+    <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/main.css" />
+    <link rel="shortcut icon" type="text/css" href="{{ SITEURL }}/favicon.ico" />
+    <link rel="alternate" type="application/atom+xml"
+          title="{{ SITENAME }} — Flux Atom"
+          href="{{ SITEURL }}/{{ FEED }}" /> 
+    {% if FEED_RSS %}
+    <link rel ="alternate" type="application/rss+xml"
+          title="{{ SITENAME }} — Flux RSS"
+          href="{{ SITEURL }}/{{ FEED_RSS }}" /> 
+    {% endif %}
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no" />
+  </head>
+
+  <body>
+    <header class="centered">
+      <a class="sitename" href="/">{{ SITENAME }}</a>
+      {% if LINKS %}
+      <nav>
+	<ul>
+	  {% for name, link in LINKS %}
+	  <li><a href="{{ link }}">{{ name }}</a></li>
+	  {% endfor %}
+	</ul>
+      </nav>
+      {% endif %}
+    </header>
+
+    <main role="main">
+      {% block content %}
+      {% endblock %}
+    </main>
+    
+    <footer class="centered">
+      <p>Words by <a href="https://imwally.net">Wally Jones</a> &middot;
+	Created with <a href="https://blog.getpelican.com">Pelican</a></p>
+    </footer>
+  </body>
+</html>
