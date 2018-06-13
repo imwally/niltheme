@@ -3,6 +3,11 @@ html, body {
 }	     
 
 
+header, main, footer {
+    box-sizing: border-box;
+}
+
+
 header {
     color: #262E2E;
     width: 600px;
@@ -128,17 +133,23 @@ footer a {
 
 /* Responsive Stuff */
 @media only screen and (max-width: 600px) {
-    html, body {
-	padding: 0px 20px;
-    }
-    
     header,
     main,
     footer {
 	width: 100%;
     }
 
+    h1 {
+	font-size: 24px;
+    }
+    
+    main {
+	padding: 10px 15px;
+	font-size: 16px;
+    }
+
     header {
 	padding: 0;
     }
+
 }
