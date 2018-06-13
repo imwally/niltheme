@@ -53,6 +53,15 @@ h1 {
 }
 
 
+pre {
+    border: 1px solid #eee;
+    font-size: 13px;
+    line-height: 1.4em;
+    padding: 10px;
+    overflow-x: scroll
+}
+
+
 .centered {
     text-align: center;
 }
@@ -142,6 +151,10 @@ footer a {
     h1 {
 	font-size: 24px;
     }
+
+    pre {
+	font-size: 11px;
+    }
     
     main {
 	padding: 10px 15px;
@@ -151,5 +164,4 @@ footer a {
     header {
 	padding: 0;
     }
-
 }
