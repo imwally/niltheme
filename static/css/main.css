@@ -25,7 +25,7 @@ header {
 
 
 nav {
-    font-size: 14px;
+    font-size: 16px;
     font-family: Georgia,
 		 Times New Roman,
 		 Times,
@@ -47,16 +47,23 @@ nav ul li {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
+    margin: 40px 0 0 0;
 }
 h1 {
     font-size: 32px;
 }
 
 blockquote {
-    margin: 0;
+    margin: 40px 0;
     padding-left: 40px;
     border-left: 4px solid #eee;
     font-style: italic;
+}
+
+code {
+    border: 1px solid #eee;
+    padding: 0 4px;
+    font-size: 16px
 }
 
 pre {
@@ -65,7 +72,8 @@ pre {
     font-size: 13px;
     line-height: 1.4em;
     padding: 10px;
-    overflow-x: scroll
+    overflow-x: scroll;
+    margin: 40px 0;
 }
 
 
@@ -115,12 +123,15 @@ main {
     width: 600px;
     margin: auto;
     line-height: 1.7em;
-    font-size: 18px;
+    font-size: 20px;
     font-family: Palatino,
 		 Georgia,
 		 'Times New Roman',
 		 Times,
 		 serif;
+}
+main p {
+    margin-bottom: 40px;
 }
 main a {
     color: #000;
@@ -134,7 +145,7 @@ footer {
     color: #999;
     width: 600px;
     margin: 50px auto;
-    font-size: 14px;
+    font-size: 16px;
     font-family: Palatino,
 		 Georgia,
 		 'Times New Roman',
@@ -165,7 +176,7 @@ footer a {
     
     main {
 	padding: 10px 15px;
-	font-size: 16px;
+	font-size: 18px;
     }
 
     header {
