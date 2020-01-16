@@ -1,5 +1,9 @@
 html, body {
     margin: 0;
+    font-family: 'Avenir Next',
+		 'HelveticaNeue-Light',
+		 'Helvetica Neue',
+		 Helvetica, Arial, sans-serif;
 }	     
 
 
@@ -10,7 +14,7 @@ header, main, footer {
 
 header {
     color: #262E2E;
-    width: 600px;
+    width: 640px;
     padding: 10px;
     margin: auto;
 }
@@ -26,14 +30,11 @@ header {
 
 nav {
     font-size: 16px;
-    font-family: Georgia,
-		 Times New Roman,
-		 Times,
-		 serif;
 }
 nav a {
     color: #999;
     text-decoration: none;
+    border-bottom: 1px solid #999;
 }
 nav ul {
     list-style: none;
@@ -41,12 +42,12 @@ nav ul {
 }
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 20px 0 0;
 }
 
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;
+    font-weight: bold;
     margin: 40px 0 0 0;
 }
 h1 {
@@ -67,7 +68,7 @@ code {
 }
 
 .highlight {
-    width: 800px;
+    width: 840px;
     margin-left: -110px;
 }
 
@@ -100,7 +101,7 @@ pre {
 
 
 article img {
-    width: 800px;
+    width: 840px;
     margin: auto;
     margin-left: -110px;
 }
@@ -116,24 +117,15 @@ article img {
 time {
     color: #888;
     font-size: 0.8em;
-    font-family: 'Avenir Next',
-		 'HelveticaNeue-Light',
-		 'Helvetica Neue',
-		 Helvetica, Arial, sans-serif;
 }
 
 
 main {
     padding: 10px;
-    width: 600px;
+    width: 640px;
     margin: auto;
     line-height: 1.7em;
     font-size: 20px;
-    font-family: Palatino,
-		 Georgia,
-		 'Times New Roman',
-		 Times,
-		 serif;
 }
 main p {
     margin-bottom: 40px;
@@ -142,29 +134,25 @@ main a {
     color: #000;
     text-decoration: none;
     border-bottom: 1px solid #888;
-    padding-bottom: 2px;
 }
 
 
 footer {
     color: #999;
-    width: 600px;
-    margin: 50px auto;
+    width: 640px;
+    margin: auto;
+    padding: 10px;
     font-size: 16px;
-    font-family: Palatino,
-		 Georgia,
-		 'Times New Roman',
-		 Times,
-		 serif;
 }
 footer a {
     color: #999;
     text-decoration: none;
+    border-bottom: 1px solid #999;
 }
 
 
 /* Responsive Stuff */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
     header,
     main,
     footer {
@@ -188,7 +176,7 @@ footer a {
 	padding: 0;
     }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 840px) {
     article img,
     .highlight {
         width: 100%;

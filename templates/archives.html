@@ -3,10 +3,10 @@
 {% block title %}Archives - {{ SITENAME }}{% endblock %}
 {% block content %}
 
-<h1 class="bottom-big centered">Archives</h1>
+<h1 class="bottom-big">Archives</h1>
 {% for article in dates %}
-<h3 class="bottom-none centered"><a href="/{{ article.url }}">{{ article.title }}</a></h3>
-<div class="centered"><time datetime="{{ article.date }}">{{ article.date|strftime('%-Y.%-m.%d') }}</time></div>
+<h3 class="bottom-none"><a href="/{{ article.url }}">{{ article.title }}</a></h3>
+<time datetime="{{ article.date }}">{{ article.date|strftime('%-Y.%-m.%d') }}</time>
 {% endfor %}
 
 {% endblock %}

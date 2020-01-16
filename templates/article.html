@@ -3,14 +3,12 @@
 {% block content %}
 
 <article>
-  <h1 class="bottom-none centered">{{ article.title }}</h1>
-  <div class="centered">
-    <time datetime"{{ article.date }}">{{ article.date|strftime('%B %-d, %Y') }}</time>
-  </div>
+  <h1 class="bottom-none">{{ article.title }}</h1>
+  <time datetime"{{ article.date }}">{{ article.date|strftime('%B %-d, %Y') }}</time>
   <section class="article-body">
     {{ article.content }}
   </section>
-  <section class="article-end centered">
+  <section class="article-end">
     <p>&#9744;</p>
   </section>
 </article>
