@@ -5,7 +5,7 @@
 
 <h1 class="bottom-big">Archives</h1>
 {% for article in dates %}
-<h3 class="bottom-none"><a href="/{{ article.url }}">{{ article.title }}</a></h3>
+<h2 class="bottom-none"><a href="/{{ article.url }}">{{ article.title }}</a></h2>
 <time datetime="{{ article.date }}">{{ article.date|strftime('%-Y.%-m.%d') }}</time>
 {% endfor %}
 
