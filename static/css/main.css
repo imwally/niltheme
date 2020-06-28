@@ -45,7 +45,10 @@ nav ul li {
     margin: 0 20px 0 0;
 }
 
-
+h1 {
+    font-size: 40px;
+    line-height: 46px;
+}
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     margin: 40px 0 0 0;
